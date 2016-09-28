@@ -7,7 +7,7 @@ var formidable = require('express-formidable');
 app.use(formidable.parse());
  
  app.get('/',function(req,res){
-      res.sendFile(__dirname + "index.html");
+      res.sendFile(__dirname + "/index.html");
 });
  
 app.post('/upload', function (req, res) {
